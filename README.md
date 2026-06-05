@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# GovBizConnect – AI NIC Code & Scheme Recommender
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GovBizConnect is an AI-powered recommendation platform designed to help businesses identify relevant NIC (National Industrial Classification) codes and discover government schemes tailored to their industry and operational requirements.
 
-## Available Scripts
+The platform uses semantic search techniques powered by SBERT embeddings and FAISS vector indexing to provide intelligent recommendations beyond traditional keyword-based search. Users can describe their business activities in natural language and receive accurate classification suggestions along with relevant government schemes.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* AI-powered NIC code recommendation
+* Government scheme discovery and matching
+* Semantic search using SBERT embeddings
+* Fast vector similarity search with FAISS
+* Natural language business description analysis
+* Flask-based backend APIs
+* React.js frontend interface
+* Intelligent recommendation workflows
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend
 
-### `npm test`
+* React.js
+* JavaScript
+* HTML/CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
 
-### `npm run build`
+* Python
+* Flask
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### AI & Search
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* SBERT (Sentence Transformers)
+* FAISS
+* Semantic Search
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Data
 
-### `npm run eject`
+* NIC Classification Dataset
+* Government Scheme Dataset
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Architecture
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+User Query
+     │
+     ▼
+React Frontend
+     │
+     ▼
+Flask API
+     │
+ ┌───┴───────────┐
+ ▼               ▼
+SBERT       NIC & Scheme
+Embeddings     Datasets
+     │
+     ▼
+FAISS Vector Search
+     │
+     ▼
+Recommendations
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```text
+.
+├── app.py
+├── requirements.txt
+├── App.js
+├── home.js
+├── nic.js
+├── package.json
+├── nic_2008.csv
+├── Cleaned_CenterSectorScheme2021-22.csv
+└── README.md
+```
 
-## Learn More
+## Workflow
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. User enters a business description.
+2. Text is converted into vector embeddings using SBERT.
+3. FAISS performs similarity search on NIC classifications.
+4. Matching NIC codes are identified.
+5. Relevant government schemes are retrieved.
+6. Recommendations are displayed through the React interface.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Key Learning Outcomes
 
-### Code Splitting
+* Natural Language Processing (NLP)
+* Semantic Search Systems
+* Vector Databases and Retrieval
+* Recommendation Systems
+* AI-powered Search Applications
+* Full-Stack Development with Flask and React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Improvements
 
-### Analyzing the Bundle Size
+* Multilingual support
+* Personalized recommendations
+* Advanced filtering and ranking
+* Cloud deployment
+* Real-time scheme updates
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+Ayushi Bansal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+M.Sc. Chemistry + B.E. Mechanical Engineering
+BITS Pilani, Hyderabad Campus
