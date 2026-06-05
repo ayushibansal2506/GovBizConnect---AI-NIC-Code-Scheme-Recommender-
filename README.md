@@ -1,40 +1,70 @@
-# GovBizConnect – AI NIC Code & Scheme Recommender
+# Getting Started with Create React App
 
-GovBizConnect is an AI-powered recommendation platform that helps businesses identify relevant NIC (National Industrial Classification) codes and discover government schemes tailored to their industry and operational needs.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The platform leverages semantic search techniques using SBERT embeddings and FAISS vector indexing to provide intelligent recommendations beyond traditional keyword-based search. Users can describe their business activities in natural language and receive accurate classification suggestions along with relevant government schemes and benefits.
+## Available Scripts
 
-## Features
+In the project directory, you can run:
 
-* AI-powered NIC code recommendation
-* Government scheme discovery and matching
-* Semantic search using SBERT embeddings
-* Fast vector similarity search with FAISS
-* Natural language business description analysis
-* REST API backend using Flask
-* Interactive frontend built with React
-* Scalable recommendation architecture
+### `npm start`
 
-## Tech Stack
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Backend
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-* Python
-* Flask
+### `npm test`
 
-### AI & Search
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-* SBERT (Sentence Transformers)
-* FAISS
-* Semantic Search
+### `npm run build`
 
-### Frontend
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* React.js
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Core Concepts
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* Natural Language Processing (NLP)
-* Vector Embeddings
-* Recommendation Systems
-* Information Retrieval
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
